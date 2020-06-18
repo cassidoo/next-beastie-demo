@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Counter from '@components/Counter'
@@ -14,6 +15,9 @@ export default function Home() {
       <main>
         <Header />
         <Counter />
+        <Link href="/contact">
+          <a>Give me your email or else</a>
+        </Link>
       </main>
 
       <Footer />
